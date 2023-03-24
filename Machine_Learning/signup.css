@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: linear-grandiant(45deg , rgb(135 129 255  , rgb(255 110 110)));
+    position: relative;
+}
+.container.box{
+    position:absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 25px 25px 45px 25px;
+    border-radius: 20%;
+
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+h2::before{
+    content: "";
+    position:absolute;
+    width: 55px;
+    height: 5px;
+    border-radius: 50px;
+    background-color:linear-gradient(45deg, #875cff,#ff66df);
+    bottom: -8px;
+
+}
+.box .input-box{
+    width: 100%;
+    position: relative;
+}
+.box .input-box input[type="text"]{
+    width: 100%;
+    font-size: 26px;
+    margin: 16px 0px;
+    outline: none;
+    border-width: 0px 0px 2px 0px;
+    border-color: #cd7acd;
+}
+
+.box .input-box label{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 28px;
+    color: #0000009e;
+    pointer-events: none;
+    transition: 0.2s;
+
+}
+.box .input-box input:focus + label,
+.box .input-box input:valid + label{
+    top: -10px;
+    font-size: 18px;
+    color: blue;
+
+
+}
